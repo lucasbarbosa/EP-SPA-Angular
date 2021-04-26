@@ -1,0 +1,36 @@
+Anatomia de um projeto Angular
+================================================================
+- nome_modules
+- src => projeto
+	- app => componentes
+		- app.module.ts => Módulo principal
+		- app.component.ts => Componente principal
+		- app.routes.ts => Configuração de rotas
+		
+	- assets => arquivos complementares (imagens, estilos, etc)
+	- index.html => SPA
+	- main.ts => Arquivo principal da aplicação (Startup)
+	- polyfills.ts => Suporte para versões mais antigas do browser
+	
+- angular.json => Configurações do Angular
+- package.json => Configurações dos pagotes
+- tsconfig.json => Configurações sobre o TypeScript
+- tslint.json => Configurações sobre o identação de código
+
+
+Extensões recomendadas VSCode
+================================================================
+- Angular Console
+- Angular Snippets => Intellisense
+- Better Comments
+- Debugger for Chrome
+- GitLens
+- Npm
+- Npm Intellisense
+- vscode-icons
+
+
+Arquitetura Angular
+================================================================
+- 
+- 

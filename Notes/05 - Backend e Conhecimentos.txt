@@ -1,0 +1,14 @@
+Consumindo dados do back-end
+================================================================
+- npm install -g json-server
+- json-server --watch file.json (diretório do arquivo)
+
+
+Conhecimentos Essenciais
+================================================================
+- Não versionar o diretório de módulos do Angular
+- npm check updates
+- npm install
+
+Ivy => Compilador do projeto Angular
+- ng build (ng b) --prod

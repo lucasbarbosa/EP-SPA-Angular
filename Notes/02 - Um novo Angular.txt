@@ -1,0 +1,41 @@
+Um novo Angular
+================================================================
+https://angular.io/
+Angular => Um framework Web, Mobile e Desktop
+
+AngularJS e Angular não são a mesma coisa
+----------------------------------------------------------------
+AngularJS (1.x) => (2010) MVC e MVVM | JavaScript
+Angular (2+) => (2015) WebComponents | TypeScript
+
+Semantic Versioning (Versionamento)
+----------------------------------------------------------------
+Exemplo: 2.3.1
+Major => Breaking change (A cada 6 meses)
+Minor => New features, not breaking (De 1 a 3 a cada major release)
+Patch => Bugfixes, not breaking (Quase todas as semanas)
+
+Por que escolher Angular?
+----------------------------------------------------------------
+- Rápido, moderno, simplificado e produtivo.
+- Hoje em dia não é o mais popular, mas é um dos mais completos.
+
+Anatomia de uma App Angular
+----------------------------------------------------------------
+- Uma aplicação Angular é uma coleção de componentes.
+- Component = Template (HTML), + Classe (Properties e Methods) + Metadata
+
+Linguagens suportadas
+----------------------------------------------------------------
+- EcmaScript 5
+-- Roda no browser
+
+- EcmaScript 6
+-- Novas funcionalidades
+-- Em caso de clientes com versões mais antigas dos browsers, talvez seja necessário transpilar.
+
+- TypeScript
+-- SuperSet de JavaScript
+-- Fortemente tipado
+-- Ferramental rico na IDE
+-- Precisa transpilar

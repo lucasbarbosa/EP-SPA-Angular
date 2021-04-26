@@ -1,0 +1,42 @@
+Setup do ambiente
+================================================================
+- NodeJS (Última versão | node -v nvm)
+- NPM (npm install npm@latest -g)
+
+
+Setup do Node
+----------------------------------------------------------------
+AngularJS (1.x) => (2010) MVC e MVVM | JavaScript
+Angular (2+) => (2015) WebComponents | TypeScript
+
+
+NPM e Pacotes
+----------------------------------------------------------------
+https://www.npmjs.com/package/package
+Gerenciador de pacotes do Angular, como se fosse o NuGet Package do .NET.
+
+
+Angular CLI (Command Line Interface)
+----------------------------------------------------------------
+- Framework para trabalhar com Anguar via linha de comando.
+https://angular.io/cli
+Executar comando para instalar: npm install -g @angular/cli
+
+- code . => Abrir VSCode no diretório da aplicação
+- ng new MinhaAppAngular => Criar um projeto Angular
+- ng serve (ng s) => Rodar a aplicação
+- ng generate component NomeComponente (ng g c NomeComponente) => Criar um componente
+
+
+Anatomia de um projeto Angular
+================================================================
+- nome_modules
+- src => projeto
+	- app => componentes
+	- assets => arquivos complementares (imagens, estilos, etc)
+	- index.html => SPA
+	- main.ts => Arquivo principal da aplicação (Startup)
+- angular.json => Configurações do Angular
+- package.json => Configurações dos pagotes
+- tsconfig.json => Configurações sobre o TypeScript
+- tslint.json => Configurações sobre o identação de código
