@@ -26,6 +26,7 @@ Executar comando para instalar: npm install -g @angular/cli
 - ng new MinhaAppAngular => Criar um projeto Angular
 - ng serve (ng s) => Rodar a aplicação
 - ng generate component NomeComponente (ng g c NomeComponente) => Criar um componente
+- ng new --minimal -g MeuProjeto => Criar um projeto com o mínimo de coisas necessárias e sem arquivos GIT
 
 
 Anatomia de um projeto Angular

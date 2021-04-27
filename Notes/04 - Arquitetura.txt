@@ -32,5 +32,28 @@ Extensões recomendadas VSCode
 
 Arquitetura Angular
 ================================================================
-- 
-- 
+Decorators mais utilizados para focar nos estudos estudos:
+- Component
+- Directive
+- Injectable
+- Input/Output
+- NgModule
+- Pipe
+- ViewChildren
+
+
+Data Binding
+================================================================
+One-way Binding => Componente atualiza a página, o contrário não acontece.
+- Interpolation
+	<label>Nome: {{ meuDado }}</label>
+- Property Binding
+	<img [src]="minhaUrl" /> => Mesma coisa que: <img src="{{ minhaUrl }}" />
+
+Event Binding => Realiza a chamada de um método do componente com base no evento do HTML, o contrário não acontece.
+- <button (click)='clickContador()'>Clique-me</button>
+
+Two-way binding => Exibe e atualiza um dado nas duas direções (template | componente).
+- ngModel (União do Property Binding com Event Binding)
+	<input class="form-control" type="text" [(ngModel)]="evento.nome" />
+	<label>Nome do Evento: {{ evento.nome }}</label>

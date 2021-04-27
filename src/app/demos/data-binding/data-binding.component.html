@@ -1,42 +1,46 @@
 <div class="container main-container">
+    <h2 class="text-info">Data Binding</h2>
+
+    <hr />
+
     <h3>Interpolation</h3>
 
-    <p>O número de cliques é: {{ contadorClique }}</p>
+        <p>O número de cliques é: {{ contadorClique }}</p>
+        <p [ngClass]="{
+            'text-secondary':contadorClique < 3,
+            'text-success':contadorClique >= 3,
+            'text-warning':contadorClique >= 5,
+            'text-danger':contadorClique >= 9
+        }">O número de cliques é: {{ contadorClique }}</p>
 
-    <br /><br />
+    <hr />
 
     <h3>Property Binding</h3>
 
-    <button class="btn btn-info" [disabled]="contadorClique >= 10">Info</button>
+        <button class="btn btn-info" [disabled]="contadorClique >= 10">Disabled: contadorClique >= 10</button>
 
-    <br /><br />
+    <hr />
 
-    <img [src]="urlImagem" height="50px" width="50px" />
+        <img [src]="urlImagem" height="50px" width="50px" />
 
-    <br /><br />
+    <hr />
 
     <h3>Event Binding</h3>
 
-    <button class="btn btn-warning" (click)="adicionarClique()">Clique Me</button>
-    <button class="btn btn-danger" (click)="zerarContador()" [disabled]="contadorClique < 10">Zerar Contador</button>
+        <button class="btn btn-warning" (click)="adicionarClique()">Adicionar Contador</button>
+        <button class="btn btn-danger" (click)="zerarContador()" [disabled]="contadorClique < 10">Zerar Contador</button>
 
-    <br /><br />
+    <hr />
+
+        <input type="text" (keyup)='KeyUp($event)' placeholder="Digite seu nome" />
+        <br />
+        <label class="{{nome}}">Seu nome é: {{nome}}</label>
+
+    <hr />
 
     <h3>Two-Way Binding</h3>
 
-    <input type="text" (keyup)='KeyUp($event)' placeholder="Digite seu nome" />
-    <br />
-    <label>Seu nome é: {{nome}}</label>
-
-    <hr />
-
-    <input type="text" [ngModel]="nome" (ngModelChange)='nome = $event' placeholder="Digite seu nome" />
-    <br />
-    <label>Seu nome é: {{nome}}</label>
-
-    <hr />
-
-    <input type="text" [(ngModel)]="nome" placeholder="Digite seu nome" />
-    <br />
-    <label class="{{nome}}">Seu nome é: {{nome}}</label>
+        <input type="text" [(ngModel)]="nome" placeholder="Digite seu nome" />
+        <br />
+        <label [ngClass]="nome">Seu nome é: {{nome}}</label>
 </div>

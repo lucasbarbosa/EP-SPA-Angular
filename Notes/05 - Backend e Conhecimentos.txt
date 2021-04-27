@@ -1,7 +1,7 @@
 Consumindo dados do back-end
 ================================================================
 - npm install -g json-server
-- json-server --watch file.json (diretório do arquivo)
+- json-server --watch produtos.json (diretório do arquivo)
 
 
 Conhecimentos Essenciais
