@@ -6,8 +6,21 @@ Consumindo dados do back-end
 
 Conhecimentos Essenciais
 ================================================================
+Pipes => Transforma a apresentação de um dado:
+- {{produto.nome | titlecase }}
+- {{produto.valor | currency:'BRL':'symbol':'1.2-2':'pt' }}
+
+Diretivas de decisão:
+- ngIf
+- ngFor
+- <div [ngSwitch]="produto.promocao">
+	<p *ngSwitchCase="true">Promoção</p>
+	<p *ngSwitchCase="false">Por apenas:</p>
+</div>
+
+Atualizar versões
 - Não versionar o diretório de módulos do Angular
-- npm check updates
+- npm check updates (ncu) (Instalar pacote)
 - npm install
 
 Ivy => Compilador do projeto Angular

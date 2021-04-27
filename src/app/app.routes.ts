@@ -4,6 +4,7 @@ import { ContatoComponent } from "./institucional/contato/contato.component";
 import { SobreComponent } from "./institucional/sobre/sobre.component";
 import { HomeComponent } from "./navegacao/home/home.component";
 import { ListaProdutoComponent } from "./produtos/lista-produto/lista-produto.component";
+import { ProdutoDetalheComponent } from "./produtos/produto-detalhe/produto-detalhe.component";
 
 export const rootRouterConfig: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -12,5 +13,5 @@ export const rootRouterConfig: Routes = [
     {path: 'sobre', component: SobreComponent},
     {path: 'feature-data-binding', component: DataBindingComponent},
     {path: 'produtos', component: ListaProdutoComponent},
-    {path: 'produto-detalhe/:id', component: ListaProdutoComponent}
+    {path: 'produto-detalhe/:id', component: ProdutoDetalheComponent}
 ];

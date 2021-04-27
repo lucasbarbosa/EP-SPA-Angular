@@ -13,4 +13,9 @@ export class ProdutoService{
         var produtos = this.http.get<Produto[]>(this.UrlServiceV1 + "produtos");
         return produtos;
     };
+
+    ProdutoDetalhe(id: string): Observable<Produto>{
+        var produto = this.http.get<Produto>(this.UrlServiceV1 + "produtos/" + id);
+        return produto;
+    };
 }

@@ -19,6 +19,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
 import { ProdutoService } from './produtos/produtos.service';
 import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutoDetalheComponent } from './produtos/produto-detalhe/produto-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     SobreComponent,
     ContatoComponent,
     DataBindingComponent,
-    ListaProdutoComponent
+    ListaProdutoComponent,
+    ProdutoDetalheComponent
   ],
   imports: [
     BrowserModule,
